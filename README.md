@@ -8,7 +8,7 @@
 
 | 시리즈 | 대상 게임 | 캠페인 시대 | 현재 단계 |
 |---|---|---|---|
-| **[Twilight of Antiquity](Twilight_of_Antiquity/README.md)** | Victoria 3 | 서기 **600~720년** (120년) | 기획·분석기 설계 v0.2 |
+| **[Twilight of Antiquity](Twilight_of_Antiquity/README.md)** | Victoria 3 | 서기 **600~720년** (120년) | 통합 툴체인 기획 v0.3 |
 
 다른 시대의 모드 시리즈는 기획이 확정될 때 별도 1차 디렉터리로 추가합니다. 현재 다른 시리즈의 제작·시작연도·출시는 확정되지 않았습니다.
 
@@ -50,5 +50,12 @@ vic3-mod_saecvar/
 - [통합 개발 순서 및 마일스톤](Twilight_of_Antiquity/docs/08_ROADMAP_QA.md)
 - [분석기 세부 구현 로드맵](Twilight_of_Antiquity/docs/12_ANALYZER_ROADMAP.md)
 - [규칙·진단 형식 및 CLI 계약](Twilight_of_Antiquity/docs/13_ANALYZER_RULES_REPORTS.md)
+- **[전체 개념 기능 96항목](Twilight_of_Antiquity/docs/14_TOOLCHAIN_FUNCTION_CATALOG.md)**
+- **[기능별 참고 GitHub 저장소 18개](Twilight_of_Antiquity/docs/15_REFERENCE_REPOSITORIES.md)**
+- **[공통 코어 + Codex/Human 설계](Twilight_of_Antiquity/docs/16_TOOLCHAIN_ARCHITECTURE.md)**
+- **[최종 M0~M10 개발 순서](Twilight_of_Antiquity/docs/17_MASTER_ROADMAP.md)**
+- [Codex와 사람의 공통 변경·검증 워크플로](Twilight_of_Antiquity/docs/18_SHARED_WORKFLOWS.md)
 
 분석기 코드는 **향후** `Twilight_of_Antiquity/tools/saecvar-analyzer/`에서 시작할 계획이다. 아직 구현되지 않았으며, 다른 시리즈로의 범용화는 실제 재사용 요구가 생긴 뒤 결정한다.
+
+> 현재 상태는 **설계 문서화**다. Rust 툴체인이나 GUI가 구현되었다는 뜻은 아니다. SAECVAR 브랜드의 '루트 1차 폴더 = 시리즈명' 원칙은 그대로 유지한다.

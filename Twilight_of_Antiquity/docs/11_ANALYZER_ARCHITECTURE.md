@@ -145,3 +145,7 @@ Twilight_of_Antiquity/
 `UNSUPPORTED_RULE` = 아직 분석 범위 밖의 파일·구문·규칙
 
 특히 날짜·세이브·AI·전쟁·GUI는 엔진 테스트가 필요하다. [13 출력 계약](13_ANALYZER_RULES_REPORTS.md)에 단일 보고서 형식을 정의한다.
+
+## v0.3: 공통 툴체인과의 결합
+
+본 문서의 SAECVAR Analyzer는 [16 공통 Toolchain](16_TOOLCHAIN_ARCHITECTURE.md)의 **읽기·오버레이·검사 엔진**이다. 자체 Rust CLI를 독립 실행할 수 있어야 하지만, 별도의 완전히 독립적인 parser/규칙 엔진을 사람용 GUI가 재구현하지 않는다. 이전의 `tools/saecvar-analyzer/`는 미생성된 위치 **제안**이며, 이후 `tools/saecvar-toolchain/` workspace 안의 analyzer 패키지로 배치하는 방향으로 갱신한다. 타사 실행 도구에 의존하지 않는다는 결정은 그대로 유지한다.

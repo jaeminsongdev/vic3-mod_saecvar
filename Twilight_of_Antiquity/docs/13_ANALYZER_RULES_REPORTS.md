@@ -127,3 +127,7 @@ saecvar-analyzer explain REF-001
 ## 8. 결과 재현에 필요한 최소 메타데이터
 
 모든 보고서는 분석기 자체 버전, 게임 버전, 규칙 버전, 활성 모드 목록 및 순서의 fingerprint, 콘텐츠 해시, 검사한 폴더와 제외 항목, 미지원 규칙을 기록해야 한다. 경로·설치 정보가 공개 산출물에 누출되지 않도록 사용자의 로컬 경로는 선택적으로 가린다.
+
+## v0.3: 공통 EditPlan과 CLI 연결
+
+분석기의 `check`와 `explain`은 [16 Toolchain](16_TOOLCHAIN_ARCHITECTURE.md)의 일관된 `Inspect → EditPlan → Preview → Validate → Apply → Rollback` 절차 중 **읽기·정적 검증 단계**를 담당한다. Codex/API와 GUI는 같은 Diagnostic 객체를 사용한다. 파일을 수정하는 `edit`/`apply`/`rollback` 인터페이스는 분석기 자체가 아니라 공통 편집 엔진에 위치하며, 세부 트랜잭션과 충돌 해석은 [18 워크플로](18_SHARED_WORKFLOWS.md)에 정의한다.

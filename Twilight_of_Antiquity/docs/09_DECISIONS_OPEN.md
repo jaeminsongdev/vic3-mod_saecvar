@@ -1,6 +1,6 @@
 # 09. 의사결정 기록 및 미해결 질문
 
-- 버전: v0.2
+- 버전: v0.3
 - 기준일: 2026-10-16
 - 목적: **대화에서 확정한 것**과 **어시스턴트가 제안한 것**을 혼동하지 않기 위함.
 
@@ -91,3 +91,26 @@ D-002의 'Twilight of Antiquity'는 대화상 첫 프로젝트의 이름으로 �
 - [13 규칙·상태·보고서·CLI](13_ANALYZER_RULES_REPORTS.md)
 
 **이 변경은 문서 설계 반영이며 구현 완료 선언이 아니다.** Tiger GPL-3.0-or-later의 코드를 직접 가져오는 선택은 하지 않았고, 타사 코드의 재사용이 필요해지는 경우 사전 라이선스 검토가 필요하다.
+
+## H. 통합 툴체인 설계 통합(v0.3)
+
+| ID | 내용 | 상태 |
+|---|---|---|
+| D-013 | 기존 독립 SAECVAR Analyzer를 공통 Toolchain의 분석 계층으로 유지하고 Codex·사람이 이를 공유하는 구조 | **설계 기준선 반영** |
+| D-014 | **단일 typed EditPlan/Validation/Apply/Rollback**로 CLI/API와 GUI가 같은 파일·데이터를 수정 | **설계 기준선 반영** |
+| D-015 | **파서·오버레이·기본 검증 → 안전 편집 API → 작은 고대 경제 모드 수직 슬라이스**를 전체 GUI보다 먼저 수행 | **새 우선순위** |
+| D-016 | 브랜드 루트 1차 폴더는 시리즈명으로 유지하고 분석기/툴체인 위치를 첫 시리즈 안에 두는 방식 | **현 저장소 원칙 유지, 구현 경로는 제안** |
+
+### v0.3 추가 제안·기술 검증 과제
+
+- P-015: Rust workspace `Twilight_of_Antiquity/tools/saecvar-toolchain/`를 공통 코어 위치로 사용(이전 미생성 `tools/saecvar-analyzer/` 제안을 대체).
+- P-016: 56개 공통 개념 기능 + Codex 14개 + Human 16개 + X 횡단 원칙 10개를 ID 추적으로 관리한다.
+- P-017: 자료 유형별 authoritative source, 생성 파일 소유권·revision·단계별 트랜잭션을 강제한다.
+- P-018: M0 직후 **G0 최소 엔진 날짜 검증**으로 600/720년의 실제 실현성을 조기에 확인한다.
+- Q-018: 실제 Rust workspace 모듈/GUI 기술 선택과 서버 프로토콜(예: LSP/내부 API)은 무엇이 적합한가?
+- Q-019: 게임 설치 버전에서 GUI·이벤트/국기/지도 API의 지원 범위는 얼마나 되는가?
+- Q-020: 여러 SAECVAR 시리즈가 생겼을 때 공통 도구를 별도 공유 저장소로 분리할지?
+
+참고: [14 기능 카탈로그](14_TOOLCHAIN_FUNCTION_CATALOG.md) · [15 구현별 레포](15_REFERENCE_REPOSITORIES.md) · [16 공통 구조](16_TOOLCHAIN_ARCHITECTURE.md) · [17 전체 순서](17_MASTER_ROADMAP.md) · [18 공통 작업](18_SHARED_WORKFLOWS.md).
+
+**실행/코드 상태:** 이 문서에서는 툴체인이 설계되었을 뿐 생성·실행되지 않았고, M0~M10 모든 구현 마일스톤은 미완료다.

@@ -1,7 +1,7 @@
 # SAECVAR: Twilight of Antiquity
 
 > Victoria 3 글로벌 고대 말기 토탈 컨버전 모드  
-> **캠페인: 서기 600~720년 (120년)** · **문서 상태: 기획·개발 기준선 v0.2** · **언어: 한국어**
+> **캠페인: 서기 600~720년 (120년)** · **문서 상태: 통합 툴체인 기획 기준선 v0.3** · **언어: 한국어**
 
 ## 프로젝트 개요
 
@@ -43,6 +43,11 @@
 11. [SAECVAR Analyzer 자체 구현 아키텍처](docs/11_ANALYZER_ARCHITECTURE.md)
 12. [SAECVAR Analyzer 단계별 개발 로드맵](docs/12_ANALYZER_ROADMAP.md)
 13. [정적 검사 규칙·진단 출력·CLI 계약](docs/13_ANALYZER_RULES_REPORTS.md)
+14. [86개 개념 기능 + 10개 공통 설계 원칙 카탈로그](docs/14_TOOLCHAIN_FUNCTION_CATALOG.md)
+15. [기능별 참고 저장소 18개](docs/15_REFERENCE_REPOSITORIES.md)
+16. [Codex·Human 공통 Toolchain 아키텍처](docs/16_TOOLCHAIN_ARCHITECTURE.md)
+17. [최종 M0~M10 개발 순서](docs/17_MASTER_ROADMAP.md)
+18. [공통 EditPlan·검증·적용 워크플로](docs/18_SHARED_WORKFLOWS.md)
 
 ## 설계 원칙 요약
 
@@ -61,6 +66,12 @@
 - **개발 순서:** PDX 파서 → 모드 로드/오버레이 해석 → 심볼·참조 → 타입/Scope → 진단·CLI → SAECVAR 규칙·증분 검사 → 최소 엔진 실증 → 고대 경제·국가 시뮬레이션.
 
 상세 내용은 [08 통합 로드맵](docs/08_ROADMAP_QA.md)과 [12 분석기 로드맵](docs/12_ANALYZER_ROADMAP.md)에 정리한다.
+
+## 통합 모딩 툴체인 — 개발 원칙
+
+기존 SAECVAR Analyzer(자체 정적 분석기)는 **SAECVAR Toolchain의 읽기·검사 코어**로 유지한다. 여기에 구조적 편집·자료 생성·빌드 코어를 추가하고 **Codex CLI/API와 Human GUI가 동일한 EditPlan·검증·변경 적용**을 사용한다. Tiger는 기능 참고자료만으로 사용한다.
+
+분석기의 고급 기능이나 전체 GUI를 기다리지 않고, 파서·적용 해석·진단 → 안전 편집 → **소형 고대 경제 모드 수직 슬라이스** 순서로 진행한다. [상세 개발 순서](docs/17_MASTER_ROADMAP.md)를 우선 기준으로 사용한다.
 
 ## 개발 상태
 

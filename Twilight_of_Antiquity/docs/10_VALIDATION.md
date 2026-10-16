@@ -137,3 +137,15 @@
 ## 10. 문서 반영 검증과 실행 결과 구분
 
 이번 문서 변경으로 완료되는 것은 **설계 문서 갱신·링크·일관성 검토**뿐이다. 분석기 구현, CLI 실행, 원본 게임 분석, 엔진 테스트는 수행하지 않았다.
+
+## 11. 통합 툴체인 기능·참고 저장소 검수(v0.3)
+
+- [ ] [14 기능 카탈로그](14_TOOLCHAIN_FUNCTION_CATALOG.md) 56+14+16+10 = **96개 추적 ID**의 설명·단계·참고 레포 유효성 검사.
+- [ ] [15 참고 레포](15_REFERENCE_REPOSITORIES.md)의 URL, README 실제 기능 범위, 지원 버전, LICENSE를 구현 시점에 재검증.
+- [ ] Tiger/Jomini/pdx-parser-go/Toolkit을 **실행·링크 의존하지 않는 자체 구현** 원칙 유지.
+- [ ] 같은 객체를 Codex API와 Human GUI에서 수정할 때 최종 EditPlan/PDX 결과가 일치.
+- [ ] 기존 PDX 파일 주석·공백·중복 정의를 손상하지 않는 source-preserving write.
+- [ ] generated 파일 수정 충돌, 동시 수정 revision 충돌, 다중 파일 rollback 테스트.
+- [ ] 공개 CI에는 합성 fixture만 포함하고 원본 게임/DLC·서드파티 에셋 저작권 확인.
+- [ ] M0~M10 진행률은 단순 문서 작성과 실제 엔진/코드 실행 증거를 구분.
+- [ ] 문서의 모든 상대 링크 및 참고 ID를 검증한 후 2회 연속 재검토.
