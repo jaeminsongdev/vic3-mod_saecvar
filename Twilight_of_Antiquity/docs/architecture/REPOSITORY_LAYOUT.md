@@ -5,6 +5,8 @@
 - 최초 게임: Victoria 3, 서기 600~720년 토탈 컨버전.
 - 연관: [전체 문서](../README.md), [공통 아키텍처](TOOLCHAIN_ARCHITECTURE.md), [최종 개발 순서](../planning/MASTER_ROADMAP.md).
 
+**2026-10-16 구현 현황:** 아래의 미생성·미래 구조 설명은 최초 기획 기준이다. M0에서 실제 생성한 항목은 Rust workspace의 `crates/workspace`, `apps/cli`, `configs/game-target.json`, 최소 모드 메타데이터·날짜 정의와 `tests/runtime`이다. 현재 완료 범위는 [STATUS](../planning/STATUS.md)와 [실험 보고서](../quality/M0_G0_REPORT.md)를 우선한다.
+
 ## 1. 현재 생성할 실제 디렉터리
 
 ```text

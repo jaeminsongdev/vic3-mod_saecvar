@@ -1,0 +1,11 @@
+{
+  "name": "SAECVAR: Twilight of Antiquity - G0 Date Probe",
+  "id": "",
+  "version": "0.0.1",
+  "game_id": "victoria3",
+  "supported_game_version": "1.13.11",
+  "short_description": "Development probe for the 600-720 calendar. Uses the vanilla world; not a historical campaign.",
+  "tags": ["Utilities"],
+  "relationships": [],
+  "game_custom_data": { "multiplayer_synchronized": true }
+}

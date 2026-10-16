@@ -1,0 +1,6 @@
+﻿# G0 calendar probe only. The vanilla world is deliberately retained.
+# Engine acceptance, save/load and the end boundary require runtime evidence.
+NGame = {
+    START_DATE = "600.1.1"
+    END_DATE = "720.1.1"
+}

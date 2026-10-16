@@ -6,7 +6,7 @@
 
 | 시리즈 | 기반 게임 | 대상 시대 | 상태 |
 |---|---|---|---|
-| **[Twilight of Antiquity](Twilight_of_Antiquity/README.md)** | Victoria 3 | **서기 600~720년 (120년)** | 문서·디렉터리 기반 구축, 코드 미구현 |
+| **[Twilight of Antiquity](Twilight_of_Antiquity/README.md)** | Victoria 3 | **서기 600~720년 (120년)** | M0 환경 기반 구현, G0 최소 날짜 실증 수용, M1 초안 중단 |
 
 추가 시리즈가 시작되면 **저장소의 1차 디렉터리를 시리즈 이름으로** 생성합니다. 공통 루트는 README 및 최소한의 Git 설정만 관리하며, 서로 다른 모드의 소스·도구·문서가 섞이지 않도록 합니다.
 
@@ -28,4 +28,4 @@ vic3-mod_saecvar/
 
 **바로 볼 문서:** [시리즈 문서 목차](Twilight_of_Antiquity/docs/README.md) · [M0~M10 공식 개발 순서](Twilight_of_Antiquity/docs/planning/MASTER_ROADMAP.md) · [최적화 디렉터리 설계](Twilight_of_Antiquity/docs/architecture/REPOSITORY_LAYOUT.md)
 
-**현재 상태:** 실제 Rust workspace·게임 실행용 모드 메타데이터·게임 콘텐츠는 생성하지 않았습니다. 실행/호환성 검증이 완료된 것으로 간주하지 않습니다.
+**현재 상태:** Rust workspace, 경로 소유권 검사 CLI, 최소 날짜 모드와 G0 실험 도구를 구현했습니다. 사용자 실행으로 600년 시작·진행·저장/로드와 720년 종료·계속 플레이를 확인했습니다. 120년 연속 진행과 전체 게임 시스템·DLC 호환성은 미검증입니다. M1 파서는 초기 초안만 보존하고 사용자 요청으로 추가 개발을 중단했습니다. [현재 상태](Twilight_of_Antiquity/docs/planning/STATUS.md) · [실험 결과](Twilight_of_Antiquity/docs/quality/M0_G0_REPORT.md).

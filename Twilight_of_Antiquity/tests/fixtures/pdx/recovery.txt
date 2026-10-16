@@ -1,0 +1,6 @@
+broken =
+healthy = yes
+text = "unfinished
+after_string = retained
+}
+tail = { value = 7

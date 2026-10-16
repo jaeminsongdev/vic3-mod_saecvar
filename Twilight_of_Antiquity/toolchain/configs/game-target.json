@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "game_id": "victoria3",
+  "version": "1.13.11",
+  "steam_app_id": "529340",
+  "steam_build_id": "24799966",
+  "source_sha256": {
+    "common/defines/00_defines.txt": "e47db10931a2149c80aadab0b8de8f3fa000fdbb82a2f878fee893aa4434dd39",
+    "common/laws/00_governance_principles.txt": "e676448ea64c17079677ddbf2cbfdbec0ffdefa465286f16c1e6107a14e7f4cf",
+    "events/french_pretenders.txt": "7a00f328ac06c729384ed4e5b97963ed98ef6766a5be88bcb29d79fa40d5a4ba",
+    "common/history/treaties/00_historical_treaties.txt": "a1c7e519ef1b07e2491f473ce0f94e6abae718fe725d68bcd8644d2432602f4e"
+  },
+  "campaign": { "start": "600.1.1", "end": "720.1.1" },
+  "ownership": {
+    "installed_game_and_dlc": "read_only_proprietary_local_input",
+    "mod": "authored_source",
+    "runtime_profiles": "ignored_local_evidence"
+  },
+  "fixture_policy": "Synthetic fixtures only; do not commit installed scripts, DLC, saves or raw logs.",
+  "dlc_policy": "Installed files and the debug.log DLC list do not establish entitlement or activation; record the actual launcher/runtime configuration separately.",
+  "compatibility_patch": {
+    "kind": "experimental_local_only",
+    "game_date_1836_to_600": 6,
+    "french_pretender_year_1883_to_647": 2,
+    "meaning": "Preserve relative +47-year threshold for the G0 probe only; not final historical content."
+  }
+}

@@ -1,0 +1,12 @@
+# Synthetic SAECVAR grammar fixture; no copied game data.
+@rate = 3
+probe = {
+    name = "합성 \"문자열\" # { }"
+    key = first # duplicate keys and their order must survive
+    key = second
+    values = { alpha beta 600.1.1 }
+    target = c:EXAMPLE
+    enabled ?= yes
+    size >= 2
+    nested = { weight = -0.5 }
+}

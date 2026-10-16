@@ -1,0 +1,9 @@
+[package]
+name = "saecvar-cli"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+saecvar-workspace = { path = "../../crates/workspace" }
+saecvar-pdx-syntax = { path = "../../crates/pdx-syntax" }

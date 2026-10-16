@@ -2,6 +2,8 @@
 
 기획 문서 18개를 **주제별 디렉터리**로 배치했다. 전체 프로젝트 시작점은 [시리즈 README](../README.md), 저장소 경계·미래 확장 원칙은 [디렉터리 아키텍처](architecture/REPOSITORY_LAYOUT.md), 가장 먼저 수행할 작업은 [최종 로드맵](planning/MASTER_ROADMAP.md)을 참고한다.
 
+개발 착수 후 현재 상태는 [STATUS](planning/STATUS.md), 실제 구현·검증 결과는 [M0/G0 보고서](quality/M0_G0_REPORT.md), 실행 명령은 [runtime 안내](../tests/runtime/README.md)에서 관리한다. 아래 18개 원 기획 문서는 설계 기준으로 유지한다.
+
 | 영역 | 목적 | 문서 |
 |---|---|---|
 | `product/` | 프로젝트 비전·기획 범위 | [01 프로젝트 헌장](product/PROJECT_CHARTER.md) · [02 게임 디자인 원칙](product/DESIGN_PILLARS.md) |

@@ -1,0 +1,2 @@
+# Inline math is deliberately outside the initial subset.
+value = @[ 1 + 2 ]
