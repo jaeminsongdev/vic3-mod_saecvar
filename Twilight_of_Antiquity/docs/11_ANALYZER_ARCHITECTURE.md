@@ -1,9 +1,9 @@
 # 11. SAECVAR Analyzer — 자체 정적 분석기 아키텍처
 
-- 상태: **설계 문서 v0.1** (실제 코드 미구현)
+- 상태: **Analyzer 상세 설계 v0.1 / Toolchain 통합 기획 v0.3** (실제 코드 미구현)
 - 결정된 방향: **Tiger 참고 전용**, 자체 엔진·자체 파서·자체 모드 적용 해석기 구현
 - 권장 언어: **Rust** (프로젝트 설계안; 별도 코드 언어 확정은 아직 없음)
-- 시작 위치 제안: `Twilight_of_Antiquity/tools/saecvar-analyzer/`
+- 시작 위치 제안: `Twilight_of_Antiquity/tools/saecvar-toolchain/` 안의 독립 Analyzer 구성요소([16 통합 구조](16_TOOLCHAIN_ARCHITECTURE.md) 참고)
 - 관련: [12 개발 단계](12_ANALYZER_ROADMAP.md) · [13 진단 계약](13_ANALYZER_RULES_REPORTS.md)
 
 ## 1. 목적·비목적

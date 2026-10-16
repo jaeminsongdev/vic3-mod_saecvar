@@ -19,7 +19,7 @@ vic3-mod_saecvar/
 ├── README.md                         # SAECVAR 공통 브랜드 및 시리즈 목차
 └── Twilight_of_Antiquity/            # 시리즈별 독립 영역
     ├── README.md                     # 해당 모드의 기획 개요
-    └── docs/                         # 해당 모드의 상세 기획·검증 문서 10개
+    └── docs/                         # 해당 모드의 상세 기획·검증 문서 18개
         ├── 01_PROJECT_CHARTER.md
         ├── 02_DESIGN_PILLARS.md
         ├── 03_WORLD_600.md
@@ -29,7 +29,15 @@ vic3-mod_saecvar/
         ├── 07_WAR_MAP_DATA.md
         ├── 08_ROADMAP_QA.md
         ├── 09_DECISIONS_OPEN.md
-        └── 10_VALIDATION.md
+        ├── 10_VALIDATION.md
+        ├── 11_ANALYZER_ARCHITECTURE.md
+        ├── 12_ANALYZER_ROADMAP.md
+        ├── 13_ANALYZER_RULES_REPORTS.md
+        ├── 14_TOOLCHAIN_FUNCTION_CATALOG.md
+        ├── 15_REFERENCE_REPOSITORIES.md
+        ├── 16_TOOLCHAIN_ARCHITECTURE.md
+        ├── 17_MASTER_ROADMAP.md
+        └── 18_SHARED_WORKFLOWS.md
 ```
 
 ## 디렉터리 운영 원칙
@@ -44,7 +52,7 @@ vic3-mod_saecvar/
 
 ## 첫 시리즈 개발 우선순위
 
-현재 진행 방향은 **모드 본 제작 전에 자체 정적 분석기(SAECVAR Analyzer)를 독립 구현**하는 것이다. Tiger는 분석 기능을 연구할 때 참고하는 공개 소스일 뿐, 실행 의존성·라이브러리·검증 백엔드로 사용하지 않는다.
+현재 진행 방향은 **자체 정적 분석기의 최소 파서·적용 해석·진단을 먼저 구현하고 공통 안전 편집 API를 구축한 뒤, 작은 고대 경제 모드를 만들며 Toolchain을 확장**하는 것이다. Tiger는 기능 연구 참고자료일 뿐, 실행·라이브러리·검증 백엔드에 의존하지 않는다.
 
 - [SAECVAR Analyzer 아키텍처](Twilight_of_Antiquity/docs/11_ANALYZER_ARCHITECTURE.md)
 - [통합 개발 순서 및 마일스톤](Twilight_of_Antiquity/docs/08_ROADMAP_QA.md)
@@ -56,6 +64,6 @@ vic3-mod_saecvar/
 - **[최종 M0~M10 개발 순서](Twilight_of_Antiquity/docs/17_MASTER_ROADMAP.md)**
 - [Codex와 사람의 공통 변경·검증 워크플로](Twilight_of_Antiquity/docs/18_SHARED_WORKFLOWS.md)
 
-분석기 코드는 **향후** `Twilight_of_Antiquity/tools/saecvar-analyzer/`에서 시작할 계획이다. 아직 구현되지 않았으며, 다른 시리즈로의 범용화는 실제 재사용 요구가 생긴 뒤 결정한다.
+분석기를 포함한 공통 코어는 **향후** `Twilight_of_Antiquity/tools/saecvar-toolchain/` 아래에 구성하는 것을 권장한다. 아직 구현되지 않았으며, 다른 시리즈로의 범용화는 실제 재사용 요구가 생긴 뒤 결정한다.
 
 > 현재 상태는 **설계 문서화**다. Rust 툴체인이나 GUI가 구현되었다는 뜻은 아니다. SAECVAR 브랜드의 '루트 1차 폴더 = 시리즈명' 원칙은 그대로 유지한다.
