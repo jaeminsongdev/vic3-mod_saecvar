@@ -8,7 +8,7 @@
 
 | 시리즈 | 대상 게임 | 캠페인 시대 | 현재 단계 |
 |---|---|---|---|
-| **[Twilight of Antiquity](Twilight_of_Antiquity/README.md)** | Victoria 3 | 서기 **600~720년** (120년) | 기획 기준선 v0.1 |
+| **[Twilight of Antiquity](Twilight_of_Antiquity/README.md)** | Victoria 3 | 서기 **600~720년** (120년) | 기획·분석기 설계 v0.2 |
 
 다른 시대의 모드 시리즈는 기획이 확정될 때 별도 1차 디렉터리로 추가합니다. 현재 다른 시리즈의 제작·시작연도·출시는 확정되지 않았습니다.
 
@@ -41,3 +41,14 @@ vic3-mod_saecvar/
 5. **빈 시리즈나 예정작 폴더는 만들지 않음**: 작업이 시작된 모드만 등록합니다.
 
 첫 시리즈의 상세 결정 및 개발 검증 항목은 **[Twilight of Antiquity 문서](Twilight_of_Antiquity/README.md)**에서 확인할 수 있습니다.
+
+## 첫 시리즈 개발 우선순위
+
+현재 진행 방향은 **모드 본 제작 전에 자체 정적 분석기(SAECVAR Analyzer)를 독립 구현**하는 것이다. Tiger는 분석 기능을 연구할 때 참고하는 공개 소스일 뿐, 실행 의존성·라이브러리·검증 백엔드로 사용하지 않는다.
+
+- [SAECVAR Analyzer 아키텍처](Twilight_of_Antiquity/docs/11_ANALYZER_ARCHITECTURE.md)
+- [통합 개발 순서 및 마일스톤](Twilight_of_Antiquity/docs/08_ROADMAP_QA.md)
+- [분석기 세부 구현 로드맵](Twilight_of_Antiquity/docs/12_ANALYZER_ROADMAP.md)
+- [규칙·진단 형식 및 CLI 계약](Twilight_of_Antiquity/docs/13_ANALYZER_RULES_REPORTS.md)
+
+분석기 코드는 **향후** `Twilight_of_Antiquity/tools/saecvar-analyzer/`에서 시작할 계획이다. 아직 구현되지 않았으며, 다른 시리즈로의 범용화는 실제 재사용 요구가 생긴 뒤 결정한다.
