@@ -3,7 +3,7 @@
 - 상태: **v0.3 설계**, 아직 구현되지 않음
 - 범위: 정적 분석기 단품에서 **편집·데이터·검증·빌드가 공유되는 툴체인**으로 확장
 - 원칙: 기존 `Twilight_of_Antiquity/` 1차 폴더를 유지; 타 시리즈의 파일은 최상위 분리
-- 관련: [14 기능](14_TOOLCHAIN_FUNCTION_CATALOG.md) · [17 순서](17_MASTER_ROADMAP.md) · [18 워크플로](18_SHARED_WORKFLOWS.md)
+- 관련: [14 기능](../reference/TOOLCHAIN_FUNCTION_CATALOG.md) · [17 순서](../planning/MASTER_ROADMAP.md) · [18 워크플로](SHARED_WORKFLOWS.md)
 
 ## 1. 단일 엔진, 두 클라이언트
 
@@ -86,7 +86,7 @@
 
 ## 6. 독립 분석기와 툴체인의 관계
 
-기존 [11 Analyzer 아키텍처](11_ANALYZER_ARCHITECTURE.md)와 [12 Analyzer 로드맵](12_ANALYZER_ROADMAP.md)은 **Shared Core 중 읽기/검증 계층의 설계**로 유지한다.
+기존 [11 Analyzer 아키텍처](ANALYZER_ARCHITECTURE.md)와 [12 Analyzer 로드맵](../planning/ANALYZER_ROADMAP.md)은 **Shared Core 중 읽기/검증 계층의 설계**로 유지한다.
 
 - Analyzer는 독립적으로 CLI 실행 가능해야 한다.
 - Toolchain의 편집 엔진과 사람용 GUI는 Analyzer의 API/진단을 사용한다.
@@ -94,36 +94,32 @@
 - 기능별 구현을 과도하게 쪼개 **독립 프로세스/마이크로서비스**로 시작할 필요는 없다. 초기에는 하나의 Rust workspace에서 라이브러리 모듈·CLI를 우선한다.
 - 개발 초기 인게임 확인을 완전히 없애지는 못한다. 고위험 시작 날짜와 실제 경제·전쟁·AI는 최소 엔진 테스트가 필요하다.
 
-## 7. 논리적 패키지 배치(예정, 현재 생성되지 않은 경로)
+## 7. 현재 저장소 및 미래 논리 모듈 경계
+
+현재 저장소에는 `Twilight_of_Antiquity/{docs,mod,data,assets,toolchain,tests}`를 실질적인 최상위 작업 영역으로 구분한다. 문서는 `docs/{product,history,gameplay,architecture,planning,reference,quality}`로 분류한다. **Rust workspace와 세부 crates/apps는 구현 단계에서만 생성**한다.
 
 ```text
-vic3-mod_saecvar/
-├── README.md
-└── Twilight_of_Antiquity/
-    ├── README.md
-    ├── docs/
-    ├── data/                 # 근거 있는 구조화 데이터 원본(계획)
-    ├── mod/                  # 배포 가능한 Vic3 모드 소스/결과(계획)
-    ├── tests/                # 구현 테스트(계획)
-    └── tools/
-        └── saecvar-toolchain/
-            ├── crates/
-            │   ├── workspace/
-            │   ├── pdx-syntax/
-            │   ├── mod-resolver/
-            │   ├── semantics/
-            │   ├── analyzer/
-            │   ├── edit-engine/
-            │   ├── data-engine/
-            │   ├── build-engine/
-            │   └── diagnostics/
-            ├── cli/
-            ├── apps/human-workbench/    # 나중에 구현
-            ├── schemas/victoria3/
-            └── fixtures/
+Twilight_of_Antiquity/
+├── mod/                             # Vic3 모드의 게임 상대 경로만
+├── data/                            # 역사·정형 데이터의 authoritative source
+├── assets/                          # 편집용 원본 그래픽/라이선스
+├── tests/                           # 정적·통합·런타임 검증
+└── toolchain/
+    ├── crates/                      # 실제 코딩이 시작되면
+    │   ├── workspace/
+    │   ├── pdx-syntax/
+    │   ├── mod-overlay/
+    │   ├── semantics/
+    │   ├── diagnostics/
+    │   ├── edit-engine/
+    │   ├── data-engine/
+    │   └── build-engine/
+    └── apps/
+        ├── cli/
+        └── human-workbench/
 ```
 
-이전 문서의 `tools/saecvar-analyzer/`는 **분석기 단품 시절의 제안 경로**이며 실제 코드가 없어 아직 이동할 대상이 없다. 본 설계에서는 `tools/saecvar-toolchain/` 아래 분석기를 **내부 구성요소로 포함하는 방향**을 권장한다. 정확한 디렉터리명은 코딩 시작 시 결정 기록에 확정한다.
+이전 `tools/saecvar-analyzer/` 및 `tools/saecvar-toolchain/`은 실제 만들어진 적 없는 **옛 제안 경로**다. 현재 구조의 **유일한 도구 소스 위치 제안은 `toolchain/`**이다. 상세 내용은 [REPOSITORY_LAYOUT](REPOSITORY_LAYOUT.md)을 참조한다.
 
 ## 8. 안전성·동시성·검증 경계
 

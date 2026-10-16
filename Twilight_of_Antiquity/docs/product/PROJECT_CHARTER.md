@@ -61,7 +61,7 @@
 
 **최우선 순서:** 파서 → 모드 적용 해석 → 의미·참조 분석 → 검증·진단 CLI → 시대별 특화 검사. 필수 엔진 호환성 검증은 별도 관문으로 남겨 두며 대규모 세계 데이터 제작 이전에 실행한다.
 
-세부 구현 경계는 [11 자체 분석기 아키텍처](11_ANALYZER_ARCHITECTURE.md), 마일스톤은 [08 통합 로드맵](08_ROADMAP_QA.md)을 따른다.
+세부 구현 경계는 [11 자체 분석기 아키텍처](../architecture/ANALYZER_ARCHITECTURE.md), 마일스톤은 [08 통합 로드맵](../planning/ROADMAP_QA.md)을 따른다.
 
 ## 7. 성공의 기준
 
@@ -73,8 +73,8 @@
 - 특정 국가의 역사를 반드시 재현시키지 않아도 120년 동안 결정할 일이 이어지는가?
 - 국제교역과 지역 간 상호작용이 역사적으로 무리한 대양 간 연결을 만들어내지 않는가?
 
-기술적 실현성 판정, 구현 순서와 문서상의 미해결 문제는 [08 로드맵](08_ROADMAP_QA.md), [09 결정 기록](09_DECISIONS_OPEN.md), [10 검증](10_VALIDATION.md)을 참조한다.
+기술적 실현성 판정, 구현 순서와 문서상의 미해결 문제는 [08 로드맵](../planning/ROADMAP_QA.md), [09 결정 기록](../planning/DECISIONS_OPEN.md), [10 검증](../quality/VALIDATION.md)을 참조한다.
 
 ## 통합 툴체인에 관한 최신 기획 방향(v0.3)
 
-직접 구현하는 정적 분석기 결정은 유지한다. 또한 [16 통합 아키텍처](16_TOOLCHAIN_ARCHITECTURE.md)에서 **Codex와 사람의 공통 데이터 모델·정적 분석·편집/검증 코어**를 설계한다. 자세한 전체 기능은 [14 카탈로그](14_TOOLCHAIN_FUNCTION_CATALOG.md), 참고 저장소는 [15 목록](15_REFERENCE_REPOSITORIES.md), 선후관계는 [17 로드맵](17_MASTER_ROADMAP.md)을 따른다. 이 내용은 설계 및 개발 순서에 관한 사항이지 구현 완료 선언이 아니다.
+직접 구현하는 정적 분석기 결정은 유지한다. 또한 [16 통합 아키텍처](../architecture/TOOLCHAIN_ARCHITECTURE.md)에서 **Codex와 사람의 공통 데이터 모델·정적 분석·편집/검증 코어**를 설계한다. 자세한 전체 기능은 [14 카탈로그](../reference/TOOLCHAIN_FUNCTION_CATALOG.md), 참고 저장소는 [15 목록](../reference/REFERENCE_REPOSITORIES.md), 선후관계는 [17 로드맵](../planning/MASTER_ROADMAP.md)을 따른다. 이 내용은 설계 및 개발 순서에 관한 사항이지 구현 완료 선언이 아니다.

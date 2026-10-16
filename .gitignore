@@ -1,0 +1,29 @@
+# Generated outputs, local game paths and Rust artifacts
+**/target/
+**/build/
+**/dist/
+**/.cache/
+**/.local/
+**/.temp/
+**/tests/output/
+**/reports/generated/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Machine-specific settings and private environment
+.env
+.env.*
+!.env.example
+*.local.toml
+*.local.json
+
+# Raw runtime logs and large save artifacts; add synthetic fixtures with explicit names under tests/fixtures/
+**/logs/
+**/crashes/
+**/saves/
+**/screenshots/
+*.ck3
+*.v3

@@ -2,8 +2,8 @@
 
 - 상태: **개발 계획** / 구현 마일스톤 미완료
 - 원칙: Tiger를 필수 개발 도구로 사용하지 않음. 코드·검증 엔진은 독립 구현.
-- **v0.3 관계:** 이 문서는 **Analyzer 하위 단계(A0~A7)** 명세다. 전체 M0~M10의 공식 선후관계는 [17 통합 로드맵](17_MASTER_ROADMAP.md)이 우선한다. 아래 A5/A6/A7의 고급 기능을 모두 끝내기 전에 M4 안전 편집과 M5 고대 경제 수직 슬라이스를 시작하도록 권장한다.
-- 관련: [08 통합 로드맵](08_ROADMAP_QA.md) · [11 아키텍처](11_ANALYZER_ARCHITECTURE.md) · [13 규칙·출력](13_ANALYZER_RULES_REPORTS.md)
+- **v0.3 관계:** 이 문서는 **Analyzer 하위 단계(A0~A7)** 명세다. 전체 M0~M10의 공식 선후관계는 [17 통합 로드맵](MASTER_ROADMAP.md)이 우선한다. 아래 A5/A6/A7의 고급 기능을 모두 끝내기 전에 M4 안전 편집과 M5 고대 경제 수직 슬라이스를 시작하도록 권장한다.
+- 관련: [08 통합 로드맵](ROADMAP_QA.md) · [11 아키텍처](../architecture/ANALYZER_ARCHITECTURE.md) · [13 규칙·출력](../architecture/ANALYZER_RULES_REPORTS.md)
 
 ## 1. 선후 관계
 

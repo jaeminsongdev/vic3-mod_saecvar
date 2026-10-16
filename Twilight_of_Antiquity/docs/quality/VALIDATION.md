@@ -132,7 +132,7 @@
 
 `STATIC_VERIFIED`는 **검사 대상에 한정**된 상태이며, 파일 전체가 모든 의미에서 안전하다는 보증이 아니다. 오류의 심각도(`ERROR`, `WARNING`, `INFO`)와 검증 상태는 독립 속성으로 기록한다.
 
-세부 계약: [11 아키텍처](11_ANALYZER_ARCHITECTURE.md), [12 로드맵](12_ANALYZER_ROADMAP.md), [13 규칙·출력](13_ANALYZER_RULES_REPORTS.md).
+세부 계약: [11 아키텍처](../architecture/ANALYZER_ARCHITECTURE.md), [12 로드맵](../planning/ANALYZER_ROADMAP.md), [13 규칙·출력](../architecture/ANALYZER_RULES_REPORTS.md).
 
 ## 10. 문서 반영 검증과 실행 결과 구분
 
@@ -140,8 +140,8 @@
 
 ## 11. 통합 툴체인 기능·참고 저장소 검수(v0.3)
 
-- [ ] [14 기능 카탈로그](14_TOOLCHAIN_FUNCTION_CATALOG.md) 56+14+16+10 = **96개 추적 ID**의 설명·단계·참고 레포 유효성 검사.
-- [ ] [15 참고 레포](15_REFERENCE_REPOSITORIES.md)의 URL, README 실제 기능 범위, 지원 버전, LICENSE를 구현 시점에 재검증.
+- [ ] [14 기능 카탈로그](../reference/TOOLCHAIN_FUNCTION_CATALOG.md) 56+14+16+10 = **96개 추적 ID**의 설명·단계·참고 레포 유효성 검사.
+- [ ] [15 참고 레포](../reference/REFERENCE_REPOSITORIES.md)의 URL, README 실제 기능 범위, 지원 버전, LICENSE를 구현 시점에 재검증.
 - [ ] Tiger/Jomini/pdx-parser-go/Toolkit을 **실행·링크 의존하지 않는 자체 구현** 원칙 유지.
 - [ ] 같은 객체를 Codex API와 Human GUI에서 수정할 때 최종 EditPlan/PDX 결과가 일치.
 - [ ] 기존 PDX 파일 주석·공백·중복 정의를 손상하지 않는 source-preserving write.

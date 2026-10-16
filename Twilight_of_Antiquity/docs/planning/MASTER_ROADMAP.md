@@ -2,7 +2,7 @@
 
 - 상태: **최종 기획 통합 v0.3**, 구현/완료 선언이 아님
 - 2026-10-16 기준의 권장 선후관계
-- [08 최상위 로드맵](08_ROADMAP_QA.md)과 함께 유지; 상세 기능 ID는 [14](14_TOOLCHAIN_FUNCTION_CATALOG.md), 참고 레포는 [15](15_REFERENCE_REPOSITORIES.md).
+- [08 최상위 로드맵](ROADMAP_QA.md)과 함께 유지; 상세 기능 ID는 [14](../reference/TOOLCHAIN_FUNCTION_CATALOG.md), 참고 레포는 [15](../reference/REFERENCE_REPOSITORIES.md).
 
 ## 1. 변경된 최우선 원칙
 
@@ -79,7 +79,7 @@ M5 도달 전에는 전체 600년 국가의 역사 데이터 대량 제작, 거�
 - **Codex-first MVP:** `inspect`, `check`, `preview`, `edit`, `apply`, `rollback`이 가능한 JSON 기반 CLI + 구조적 변경 API.
 - **Human MVP:** 같은 데이터를 조회·편집하는 폼/테이블과 코드·진단·변경 승인 UI.
 - **고급 사용자 도구:** 지도·국기·이벤트 그래프, 기술트리, GUI canvas, 테스트 대시보드.
-- 실제 CLI 옵션·명령 이름은 [13 검사 계약](13_ANALYZER_RULES_REPORTS.md)의 설계 예제와 별개로 코딩 단계에서 안정화한다.
+- 실제 CLI 옵션·명령 이름은 [13 검사 계약](../architecture/ANALYZER_RULES_REPORTS.md)의 설계 예제와 별개로 코딩 단계에서 안정화한다.
 
 ## 7. 실패·중단·재개 기준
 
@@ -96,4 +96,4 @@ M5 도달 전에는 전체 600년 국가의 역사 데이터 대량 제작, 거�
 
 ## 9. 변경 이력·기존 로드맵 관계
 
-[08 통합 최상위 로드맵](08_ROADMAP_QA.md)은 본 문서 M0~M10을 **프로젝트 공식 우선순위**로 참조한다. 기존 [12 Analyzer 로드맵](12_ANALYZER_ROADMAP.md)의 A0~A7은 분석기 하위 과제이며 전체 프로젝트를 끝까지 선점하는 일렬 작업표가 아니다.
+[08 통합 최상위 로드맵](ROADMAP_QA.md)은 본 문서 M0~M10을 **프로젝트 공식 우선순위**로 참조한다. 기존 [12 Analyzer 로드맵](ANALYZER_ROADMAP.md)의 A0~A7은 분석기 하위 과제이며 전체 프로젝트를 끝까지 선점하는 일렬 작업표가 아니다.

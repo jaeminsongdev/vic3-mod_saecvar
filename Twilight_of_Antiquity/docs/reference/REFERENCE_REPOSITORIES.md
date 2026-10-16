@@ -3,7 +3,7 @@
 - 작성 기준: **2026-10-16**, 공개 GitHub README/문서 중심 1차 확인.
 - 사용 정책: **참고 연구 전용**. Tiger를 비롯한 타 도구의 실행·라이브러리 의존성을 SAECVAR Analyzer에 추가하지 않음.
 - 우선도는 SAECVAR 개발에 대한 추천이며 외부 프로젝트의 품질 점수가 아님.
-- 상세 ID 매핑: [14 기능 카탈로그](14_TOOLCHAIN_FUNCTION_CATALOG.md).
+- 상세 ID 매핑: [14 기능 카탈로그](TOOLCHAIN_FUNCTION_CATALOG.md).
 - 기능·라이선스·지원 버전은 시간이 지나면 바뀔 수 있으므로 실제 구현 착수 시 저장소 **정확한 commit SHA, LICENSE, 지원 버전**을 다시 기록한다.
 
 ## 1. 핵심 결론

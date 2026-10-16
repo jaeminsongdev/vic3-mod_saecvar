@@ -1,7 +1,7 @@
 # 18. Codex·사람 공통 모딩 작업 프로토콜
 
 - 상태: **설계 초안 v0.3**. CLI/API 및 GUI는 현재 미구현.
-- 관련: [14 기능](14_TOOLCHAIN_FUNCTION_CATALOG.md) · [16 구조](16_TOOLCHAIN_ARCHITECTURE.md) · [17 로드맵](17_MASTER_ROADMAP.md)
+- 관련: [14 기능](../reference/TOOLCHAIN_FUNCTION_CATALOG.md) · [16 구조](TOOLCHAIN_ARCHITECTURE.md) · [17 로드맵](../planning/MASTER_ROADMAP.md)
 
 ## 1. 공통 작업 명령의 의미
 

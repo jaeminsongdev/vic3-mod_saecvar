@@ -82,13 +82,13 @@ D-002의 'Twilight of Antiquity'는 대화상 첫 프로젝트의 이름으로 �
 
 ## F. 결정 기록 운영 규칙
 
-새 결정은 D 번호를 추가한다. 기존 결정을 변경할 때는 해당 행을 조용히 삭제하지 말고 '대체됨'과 근거 및 대체 ID를 남긴다. 구현 가능성 검증 결과는 [10 기술 검증](10_VALIDATION.md)에 링크한다.
+새 결정은 D 번호를 추가한다. 기존 결정을 변경할 때는 해당 행을 조용히 삭제하지 말고 '대체됨'과 근거 및 대체 ID를 남긴다. 구현 가능성 검증 결과는 [10 기술 검증](../quality/VALIDATION.md)에 링크한다.
 
 ## G. 새 분석기 설계 문서
 
-- [11 자체 분석기 아키텍처](11_ANALYZER_ARCHITECTURE.md)
-- [12 구현 마일스톤 및 의존성](12_ANALYZER_ROADMAP.md)
-- [13 규칙·상태·보고서·CLI](13_ANALYZER_RULES_REPORTS.md)
+- [11 자체 분석기 아키텍처](../architecture/ANALYZER_ARCHITECTURE.md)
+- [12 구현 마일스톤 및 의존성](ANALYZER_ROADMAP.md)
+- [13 규칙·상태·보고서·CLI](../architecture/ANALYZER_RULES_REPORTS.md)
 
 **이 변경은 문서 설계 반영이며 구현 완료 선언이 아니다.** Tiger GPL-3.0-or-later의 코드를 직접 가져오는 선택은 하지 않았고, 타사 코드의 재사용이 필요해지는 경우 사전 라이선스 검토가 필요하다.
 
@@ -103,7 +103,7 @@ D-002의 'Twilight of Antiquity'는 대화상 첫 프로젝트의 이름으로 �
 
 ### v0.3 추가 제안·기술 검증 과제
 
-- P-015: Rust workspace `Twilight_of_Antiquity/tools/saecvar-toolchain/`를 공통 코어 위치로 사용(이전 미생성 `tools/saecvar-analyzer/` 제안을 대체).
+- P-015: Rust workspace `Twilight_of_Antiquity/toolchain/`를 공통 코어 위치로 사용(이전 미생성 `tools/saecvar-analyzer/` 제안을 대체).
 - P-016: 56개 공통 개념 기능 + Codex 14개 + Human 16개 + X 횡단 원칙 10개를 ID 추적으로 관리한다.
 - P-017: 자료 유형별 authoritative source, 생성 파일 소유권·revision·단계별 트랜잭션을 강제한다.
 - P-018: M0 직후 **G0 최소 엔진 날짜 검증**으로 600/720년의 실제 실현성을 조기에 확인한다.
@@ -111,6 +111,6 @@ D-002의 'Twilight of Antiquity'는 대화상 첫 프로젝트의 이름으로 �
 - Q-019: 게임 설치 버전에서 GUI·이벤트/국기/지도 API의 지원 범위는 얼마나 되는가?
 - Q-020: 여러 SAECVAR 시리즈가 생겼을 때 공통 도구를 별도 공유 저장소로 분리할지?
 
-참고: [14 기능 카탈로그](14_TOOLCHAIN_FUNCTION_CATALOG.md) · [15 구현별 레포](15_REFERENCE_REPOSITORIES.md) · [16 공통 구조](16_TOOLCHAIN_ARCHITECTURE.md) · [17 전체 순서](17_MASTER_ROADMAP.md) · [18 공통 작업](18_SHARED_WORKFLOWS.md).
+참고: [14 기능 카탈로그](../reference/TOOLCHAIN_FUNCTION_CATALOG.md) · [15 구현별 레포](../reference/REFERENCE_REPOSITORIES.md) · [16 공통 구조](../architecture/TOOLCHAIN_ARCHITECTURE.md) · [17 전체 순서](MASTER_ROADMAP.md) · [18 공통 작업](../architecture/SHARED_WORKFLOWS.md).
 
 **실행/코드 상태:** 이 문서에서는 툴체인이 설계되었을 뿐 생성·실행되지 않았고, M0~M10 모든 구현 마일스톤은 미완료다.

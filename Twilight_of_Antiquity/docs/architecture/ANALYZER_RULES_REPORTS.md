@@ -1,7 +1,7 @@
 # 13. SAECVAR Analyzer — 검증 규칙·진단·CLI 계약
 
 - 상태: 설계안 v0.1; **아래의 CLI·출력 형식은 아직 구현되지 않음**
-- 관련: [11 아키텍처](11_ANALYZER_ARCHITECTURE.md) · [12 구현 로드맵](12_ANALYZER_ROADMAP.md)
+- 관련: [11 아키텍처](ANALYZER_ARCHITECTURE.md) · [12 구현 로드맵](../planning/ANALYZER_ROADMAP.md)
 
 ## 1. 규칙 카탈로그 (초기 후보)
 
@@ -130,4 +130,4 @@ saecvar-analyzer explain REF-001
 
 ## v0.3: 공통 EditPlan과 CLI 연결
 
-분석기의 `check`와 `explain`은 [16 Toolchain](16_TOOLCHAIN_ARCHITECTURE.md)의 일관된 `Inspect → EditPlan → Preview → Validate → Apply → Rollback` 절차 중 **읽기·정적 검증 단계**를 담당한다. Codex/API와 GUI는 같은 Diagnostic 객체를 사용한다. 파일을 수정하는 `edit`/`apply`/`rollback` 인터페이스는 분석기 자체가 아니라 공통 편집 엔진에 위치하며, 세부 트랜잭션과 충돌 해석은 [18 워크플로](18_SHARED_WORKFLOWS.md)에 정의한다.
+분석기의 `check`와 `explain`은 [16 Toolchain](TOOLCHAIN_ARCHITECTURE.md)의 일관된 `Inspect → EditPlan → Preview → Validate → Apply → Rollback` 절차 중 **읽기·정적 검증 단계**를 담당한다. Codex/API와 GUI는 같은 Diagnostic 객체를 사용한다. 파일을 수정하는 `edit`/`apply`/`rollback` 인터페이스는 분석기 자체가 아니라 공통 편집 엔진에 위치하며, 세부 트랜잭션과 충돌 해석은 [18 워크플로](SHARED_WORKFLOWS.md)에 정의한다.

@@ -1,8 +1,8 @@
 # 08. SAECVAR 전체 개발 로드맵 — 우선순위 기준
 
 - 상태: **v0.3 통합 로드맵** (실제 코드 개발은 아직 시작되지 않음)
-- **이 문서는 전체 개발의 최상위 목차**이며 [17 통합 마일스톤 상세](17_MASTER_ROADMAP.md)가 유일한 M0~M10 공식 일정·선행관계 명세다.
-- 분석기 내부 하위 단계는 [12 Analyzer 로드맵](12_ANALYZER_ROADMAP.md)에, 전체 기능은 [14 기능 카탈로그](14_TOOLCHAIN_FUNCTION_CATALOG.md)에 기술한다.
+- **이 문서는 전체 개발의 최상위 목차**이며 [17 통합 마일스톤 상세](MASTER_ROADMAP.md)가 유일한 M0~M10 공식 일정·선행관계 명세다.
+- 분석기 내부 하위 단계는 [12 Analyzer 로드맵](ANALYZER_ROADMAP.md)에, 전체 기능은 [14 기능 카탈로그](../reference/TOOLCHAIN_FUNCTION_CATALOG.md)에 기술한다.
 - 기술적 핵심: **Tiger 참고 전용 + 자체 정적 분석기 + 공통 편집 코어 + Codex/Human 동등한 클라이언트**.
 
 ## 1. 가장 먼저 할 일과 그 이유
@@ -45,9 +45,9 @@
 
 ## 4. Codex와 사람용 기능 통합
 
-기획상 공통 기능 56개, Codex 특화 14개, 사람 특화 16개, 횡단 원칙 10개를 관리한다(추적 ID 96개). 자세한 도메인/기능/참고 레포/우선 단계는 [14 기능 카탈로그](14_TOOLCHAIN_FUNCTION_CATALOG.md)에 각각 있다.
+기획상 공통 기능 56개, Codex 특화 14개, 사람 특화 16개, 횡단 원칙 10개를 관리한다(추적 ID 96개). 자세한 도메인/기능/참고 레포/우선 단계는 [14 기능 카탈로그](../reference/TOOLCHAIN_FUNCTION_CATALOG.md)에 각각 있다.
 
-Codex와 Human은 **같은 정의·같은 검증·같은 파일 변경 엔진**을 사용한다. 별도의 서로 다른 parser/DB/validator로 이중 개발하지 않는다. [16 아키텍처](16_TOOLCHAIN_ARCHITECTURE.md), [18 작업 계약](18_SHARED_WORKFLOWS.md) 참고.
+Codex와 Human은 **같은 정의·같은 검증·같은 파일 변경 엔진**을 사용한다. 별도의 서로 다른 parser/DB/validator로 이중 개발하지 않는다. [16 아키텍처](../architecture/TOOLCHAIN_ARCHITECTURE.md), [18 작업 계약](../architecture/SHARED_WORKFLOWS.md) 참고.
 
 ## 5. 완료 보고 규칙
 

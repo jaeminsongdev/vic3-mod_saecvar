@@ -1,7 +1,7 @@
 # 02. 핵심 게임 디자인 원칙
 
 - 상태: 디자인 원칙 초안 (일부는 합의된 방향, 세부 메커니즘은 미확정)
-- 관련: [프로젝트 헌장](01_PROJECT_CHARTER.md), [캠페인](04_CAMPAIGN_600_720.md)
+- 관련: [프로젝트 헌장](PROJECT_CHARTER.md), [캠페인](../history/CAMPAIGN_600_720.md)
 
 ## 원칙 A — 고증된 출발점, 결정되지 않은 미래
 
@@ -44,7 +44,7 @@
 - **실행 검증:** 실제 엔진 로딩, 600년 날짜 처리, 경제·AI·전쟁·세이브, GUI. 독립 분석기로 완전히 대체할 수 없다.
 - **미확인 항목:** 게임 버전별 사양이 불분명하면 '정상'이 아닌 '검증 필요'를 반환한다.
 
-규칙과 리포트 사양은 [13 분석기 규칙·보고 형식](13_ANALYZER_RULES_REPORTS.md)에 명시한다.
+규칙과 리포트 사양은 [13 분석기 규칙·보고 형식](../architecture/ANALYZER_RULES_REPORTS.md)에 명시한다.
 
 ## 제안: 핵심 플레이 루프
 
@@ -85,4 +85,4 @@
 
 ## 공통 도구의 제작 원칙
 
-소스 파일을 다른 편집 프로그램이 자동 덮어쓰는 문제를 피하기 위해, 데이터마다 하나의 authoritative source를 정의한다. Codex와 사람이 같은 `EditPlan → Preview → Validate → Apply` 계약을 사용하고, 원본 형식과 변경 근거를 보존한다. 구조적 검사/예측과 엔진 실행 검증은 분리한다. [16 아키텍처](16_TOOLCHAIN_ARCHITECTURE.md), [18 사용 절차](18_SHARED_WORKFLOWS.md)를 참고한다.
+소스 파일을 다른 편집 프로그램이 자동 덮어쓰는 문제를 피하기 위해, 데이터마다 하나의 authoritative source를 정의한다. Codex와 사람이 같은 `EditPlan → Preview → Validate → Apply` 계약을 사용하고, 원본 형식과 변경 근거를 보존한다. 구조적 검사/예측과 엔진 실행 검증은 분리한다. [16 아키텍처](../architecture/TOOLCHAIN_ARCHITECTURE.md), [18 사용 절차](../architecture/SHARED_WORKFLOWS.md)를 참고한다.

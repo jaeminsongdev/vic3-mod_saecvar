@@ -73,8 +73,8 @@
 - 사용자가 설치한 유료 게임·DLC 파일은 **로컬 읽기 전용 입력**으로 관리하고 공개 저장소와 CI 아티팩트에 복사하지 않는다.
 - 전투 성패·육해군 이동·지도 렌더링·해상 항로의 실제 동작은 정적 구조 확인만으로 검증할 수 없다.
 
-자세한 계층별 해석은 [11 분석기 아키텍처](11_ANALYZER_ARCHITECTURE.md), [13 검증 규칙](13_ANALYZER_RULES_REPORTS.md)에서 관리한다.
+자세한 계층별 해석은 [11 분석기 아키텍처](../architecture/ANALYZER_ARCHITECTURE.md), [13 검증 규칙](../architecture/ANALYZER_RULES_REPORTS.md)에서 관리한다.
 
 ## 지도 편집기/데이터 빌더 통합 방향
 
-[15 참고 저장소](15_REFERENCE_REPOSITORIES.md) R07·R08·R11은 각기 다르다. R07은 state/pop/resource를 시각적으로 편집, R08은 기존 province 소속 이동·검증, R11은 state_regions 파일 분할·충돌 감소 원칙이다. 이를 혼합해 하나의 지도 제작 엔진으로 오인하지 않는다. [16 구조](16_TOOLCHAIN_ARCHITECTURE.md)와 [17 로드맵](17_MASTER_ROADMAP.md)에 따라 최초에는 구조화 지도 데이터 생성, 이후 시각 편집을 구현한다.
+[15 참고 저장소](../reference/REFERENCE_REPOSITORIES.md) R07·R08·R11은 각기 다르다. R07은 state/pop/resource를 시각적으로 편집, R08은 기존 province 소속 이동·검증, R11은 state_regions 파일 분할·충돌 감소 원칙이다. 이를 혼합해 하나의 지도 제작 엔진으로 오인하지 않는다. [16 구조](../architecture/TOOLCHAIN_ARCHITECTURE.md)와 [17 로드맵](../planning/MASTER_ROADMAP.md)에 따라 최초에는 구조화 지도 데이터 생성, 이후 시각 편집을 구현한다.

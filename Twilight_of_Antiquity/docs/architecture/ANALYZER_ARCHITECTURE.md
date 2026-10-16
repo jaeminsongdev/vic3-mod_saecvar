@@ -3,8 +3,8 @@
 - 상태: **Analyzer 상세 설계 v0.1 / Toolchain 통합 기획 v0.3** (실제 코드 미구현)
 - 결정된 방향: **Tiger 참고 전용**, 자체 엔진·자체 파서·자체 모드 적용 해석기 구현
 - 권장 언어: **Rust** (프로젝트 설계안; 별도 코드 언어 확정은 아직 없음)
-- 시작 위치 제안: `Twilight_of_Antiquity/tools/saecvar-toolchain/` 안의 독립 Analyzer 구성요소([16 통합 구조](16_TOOLCHAIN_ARCHITECTURE.md) 참고)
-- 관련: [12 개발 단계](12_ANALYZER_ROADMAP.md) · [13 진단 계약](13_ANALYZER_RULES_REPORTS.md)
+- 시작 위치 제안: `Twilight_of_Antiquity/toolchain/` 안의 독립 Analyzer 구성요소([16 통합 구조](TOOLCHAIN_ARCHITECTURE.md) 참고)
+- 관련: [12 개발 단계](../planning/ANALYZER_ROADMAP.md) · [13 진단 계약](ANALYZER_RULES_REPORTS.md)
 
 ## 1. 목적·비목적
 
@@ -103,32 +103,26 @@
 
 **일관성 조건:** 같은 입력 및 규칙에 대한 `check --changed` 결과는 `check --full`의 관련 진단 집합과 일치해야 한다. 모드 로드 순서 변경 시 overlay 캐시를 반드시 무효화한다.
 
-## 8. 코드 배치 제안 (미생성 디렉터리)
+## 8. 권장 코드 배치(현재 미구현)
+
+실제 소스는 별도 `tools/saecvar-analyzer/`가 아니라 시리즈 **`toolchain/`** 안에서 공통 코어로 개발한다. 공용 도구를 시리즈 밖으로 분리할지는 추가 시리즈가 구현된 뒤 결정한다.
 
 ```text
 Twilight_of_Antiquity/
-└── tools/
-    └── saecvar-analyzer/              # 계획된 위치, 아직 없음
-        ├── Cargo.toml
-        ├── crates/
-        │   ├── pdx-syntax/            # 원본 보존 Lexer/CST
-        │   ├── pdx-parser/            # AST·오류 복구
-        │   ├── pdx-workspace/         # 파일 탐색·버전·로컬 게임 입력
-        │   ├── pdx-resolver/          # 모드 오버레이·출처 추적
-        │   ├── pdx-semantics/         # 심볼·타입·Scope·참조
-        │   ├── rule-engine/           # 일반·시대별 검사 규칙
-        │   ├── diagnostics/           # JSON, SARIF, HTML
-        │   └── analyzer-cli/          # 커맨드와 종료 코드
-        ├── schemas/victoria3/         # 버전별 규칙
-        ├── rules/saecvar/             # 600년 시나리오 규칙
-        └── tests/
-            ├── fixtures/
-            ├── golden/
-            ├── fuzz/
-            └── integration/
+└── toolchain/
+    ├── Cargo.toml                     # 첫 Rust crate 도입 시 생성
+    ├── crates/
+    │   ├── pdx-syntax/
+    │   ├── mod-overlay/
+    │   ├── semantics/
+    │   ├── diagnostics/
+    │   └── edit-engine/
+    └── apps/
+        ├── cli/
+        └── human-workbench/            # M7 이후
 ```
 
-추후 다른 SAECVAR 시리즈에서 재사용할 경우, 분석기 코어를 공통 저장소/패키지로 추출할지를 **별도 의사결정**한다. 현재는 '루트 1차 폴더=시리즈명' 원칙을 유지한다.
+더 자세한 실제/계획 디렉터리 경계는 [REPOSITORY_LAYOUT](REPOSITORY_LAYOUT.md)을 따른다.
 
 ## 9. 라이선스·외부 참고 정책
 
@@ -144,8 +138,8 @@ Twilight_of_Antiquity/
 `RUNTIME_REQUIRED` = 실제 게임 엔진을 실행해야 판단 가능  
 `UNSUPPORTED_RULE` = 아직 분석 범위 밖의 파일·구문·규칙
 
-특히 날짜·세이브·AI·전쟁·GUI는 엔진 테스트가 필요하다. [13 출력 계약](13_ANALYZER_RULES_REPORTS.md)에 단일 보고서 형식을 정의한다.
+특히 날짜·세이브·AI·전쟁·GUI는 엔진 테스트가 필요하다. [13 출력 계약](ANALYZER_RULES_REPORTS.md)에 단일 보고서 형식을 정의한다.
 
 ## v0.3: 공통 툴체인과의 결합
 
-본 문서의 SAECVAR Analyzer는 [16 공통 Toolchain](16_TOOLCHAIN_ARCHITECTURE.md)의 **읽기·오버레이·검사 엔진**이다. 자체 Rust CLI를 독립 실행할 수 있어야 하지만, 별도의 완전히 독립적인 parser/규칙 엔진을 사람용 GUI가 재구현하지 않는다. 이전의 `tools/saecvar-analyzer/`는 미생성된 위치 **제안**이며, 이후 `tools/saecvar-toolchain/` workspace 안의 analyzer 패키지로 배치하는 방향으로 갱신한다. 타사 실행 도구에 의존하지 않는다는 결정은 그대로 유지한다.
+본 문서의 SAECVAR Analyzer는 [16 공통 Toolchain](TOOLCHAIN_ARCHITECTURE.md)의 **읽기·오버레이·검사 엔진**이다. 자체 Rust CLI를 독립 실행할 수 있어야 하지만, 별도의 완전히 독립적인 parser/규칙 엔진을 사람용 GUI가 재구현하지 않는다. 이전의 `tools/saecvar-analyzer/`는 미생성된 위치 **제안**이며, 이후 `toolchain/` workspace 안의 analyzer 패키지로 배치하는 방향으로 갱신한다. 타사 실행 도구에 의존하지 않는다는 결정은 그대로 유지한다.
