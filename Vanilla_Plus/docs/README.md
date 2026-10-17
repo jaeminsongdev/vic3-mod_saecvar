@@ -2,6 +2,7 @@
 
 - [세부 요구상태 등록부](planning/REQUIREMENT_REGISTER.csv) · [기능 출처 매핑](planning/FEATURE_SOURCE_MATRIX.csv) · [X01~X07 공통 정책](features/CROSS_CUTTING_REQUIREMENTS.md)
 - [56개 테스트 시나리오](quality/ACCEPTANCE_TEST_CASES.csv) · [7개 공통 테스트](quality/CROSS_CUTTING_TEST_CASES.csv) · [패치별 검증표](quality/VERSION_MATRIX.md)
+- [2026-10-17 문서 전반 감사 기록](quality/DOCUMENT_AUDIT_2026-10-17.md)
 - [Q0~Q8 공식 로드맵](planning/MASTER_ROADMAP.md) → 개발 시작/게이트
 - [F01~F18 기능 단위 문서](features/README.md) → 세부 요구 ID 및 테스트
 - [원본 조사 문서 모음](research/README.md) · [전체 자료 합본](research/ALL_IN_ONE.md)
