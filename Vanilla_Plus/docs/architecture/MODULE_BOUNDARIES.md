@@ -36,3 +36,7 @@ evidence: []
 - 동일 GUI 파일 override·defines 충돌·시뮬레이션 틱 비용을 개별 관리한다.
 - 게임 패치로 기능이 바닐라에 추가되면 그 기능의 구현 우선순위를 낮추거나 제거한다.
 - 별도 Steam 모드 패키지 5개로 분리할지는 구현/호환성 검증 후 결정. 현 단계에서는 위 분류가 **논리 경계**다.
+
+## 횡단 정책의 소유권
+
+[X01~X07](../features/CROSS_CUTTING_REQUIREMENTS.md)은 모든 기능군에 적용되며, F18 전용이 아니다. [요구 ID 등록부](../planning/REQUIREMENT_REGISTER.csv)의 테스트·실현성 상태를 기준으로 릴리스 범위를 결정한다. 외부 Steam Workshop 사례는 코드 재사용 승인이나 실제 게임 호환성의 증거가 아니며, [기능별 근거표](../planning/FEATURE_SOURCE_MATRIX.csv)는 범주 단위 참고 매핑이다.

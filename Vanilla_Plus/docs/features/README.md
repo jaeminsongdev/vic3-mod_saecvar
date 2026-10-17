@@ -1,5 +1,7 @@
 # SAECVAR: Vanilla Plus — 독립 기능군 18개
 
+[X01~X07 횡단 요구](CROSS_CUTTING_REQUIREMENTS.md) · [세부 기능 등록부 56개](../planning/REQUIREMENT_REGISTER.csv) · [기능별 외부 근거 인덱스](../planning/FEATURE_SOURCE_MATRIX.csv)
+
 각 Fxx는 설계/구현 소유 단위다. 세부 `Fxx-Ryy`는 총 56개이며, 현재 모두 **PLANNED**다. 동일한 사용자 요구가 여러 기능에 걸칠 수 있으므로 [추적 매트릭스](../research/10_TRACEABILITY_MATRIX.md)로 중복을 관리한다.
 
 | ID | P | 기능 설계 문서 | 세부 요구 | 의존 |

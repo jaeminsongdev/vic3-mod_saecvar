@@ -2,6 +2,13 @@
 
 > 상태: **기획 문서만 반영, 모든 Q 단계 미착수.** 원본 [조사 로드맵](../research/07_ROADMAP_QA.md)의 의존 관계와 [F01~F18](../features/README.md)을 통합·재배치한 시리즈 공식 계획이다.
 
+## 기능 등록·현행 버전 정책
+
+- 세부 기능 `Fxx-Ryy` 56개는 [REQUIREMENT_REGISTER.csv](REQUIREMENT_REGISTER.csv)로 **PLANNED/PENDING/NOT_RUN** 상태를 추적한다. 이 상태는 실제 구현 완료를 뜻하지 않는다.
+- Workshop·커뮤니티 수요와 기능의 범주별 연결은 [FEATURE_SOURCE_MATRIX.csv](FEATURE_SOURCE_MATRIX.csv)에 보존한다. 참고 링크가 개별 기능을 실증하는 것은 아니다.
+- 모든 기능의 안전/대칭/호환성 원칙: [X01~X07](../features/CROSS_CUTTING_REQUIREMENTS.md).
+- 공식 2026-10-07 개발일지: 1.14 공개 베타의 주요 변경사항을 1.15에 통합 중. 2026-10-08 발표된 State & Revolution의 변경된 예정 출시일은 **2026-11-05**. 1.15도 해당 콘텐츠와 함께 예정됐으나 실제 출시 빌드 확인이 필요하다. [패치별 검증표](../quality/VERSION_MATRIX.md).
+
 ## 기본 전략
 
 1. 원본 게임/버전/API를 확인하고, 기능별 `SUPPORTED / LIMITED / UNSUPPORTED / PENDING`을 기록한다.
