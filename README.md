@@ -1,31 +1,20 @@
 # SAECVAR
 
-여러 역사 시대의 대형 전략게임 토탈 컨버전 모드를 제작하는 **시리즈 브랜드**입니다.
+Victoria 3를 위한 독립 모드 프로젝트 브랜드. 기존 토탈 컨버전과 Vanilla+ 편의성/Balance Lite 프로젝트를 **하나의 저장소에서 독립 관리**합니다.
 
-## 시리즈
-
-| 시리즈 | 기반 게임 | 대상 시대 | 상태 |
+| 시리즈 | 범위 | 실제 상태 | 로드맵 |
 |---|---|---|---|
-| **[Twilight of Antiquity](Twilight_of_Antiquity/README.md)** | Victoria 3 | **서기 600~720년 (120년)** | M0 환경 기반 구현, G0 최소 날짜 실증 수용, M1 초안 중단 |
+| [Twilight of Antiquity](Twilight_of_Antiquity/README.md) | 600~720년 고대 토탈 컨버전 | M0 구현, G0 최소 날짜 실증, M1 초안 추가 개발 중단 | [M0~M10](Twilight_of_Antiquity/docs/planning/MASTER_ROADMAP.md) |
+| [Vanilla Plus (가칭)](Vanilla_Plus/README.md) | 편의성·반복 자동화·소폭 밸런스 | 조사 문서와 기능 설계만 반영 | [Q0~Q8](Vanilla_Plus/docs/planning/MASTER_ROADMAP.md) |
 
-추가 시리즈가 시작되면 **저장소의 1차 디렉터리를 시리즈 이름으로** 생성합니다. 공통 루트는 README 및 최소한의 Git 설정만 관리하며, 서로 다른 모드의 소스·도구·문서가 섞이지 않도록 합니다.
-
-## 저장소 구조
+**[SAECVAR 통합 포트폴리오 로드맵](docs/PORTFOLIO_ROADMAP.md)** — 두 시리즈의 관계·공통 도구의 추출 조건·우선순위.
 
 ```text
 vic3-mod_saecvar/
 ├── README.md
-├── .gitignore
-└── Twilight_of_Antiquity/
-    ├── README.md      # 600~720년 모드 개요
-    ├── docs/          # 18개 기획·개발 문서(주제별) + 구조 가이드
-    ├── mod/           # Victoria 3가 읽는 모드 경로만
-    ├── data/          # 역사·인구·경제 구조화 원본
-    ├── assets/        # 그래픽 소스·라이선스 자료 (mod/gfx와 구분)
-    ├── toolchain/     # 자체 Rust Analyzer + 편집·빌드 코어 + CLI/GUI
-    └── tests/         # 정적·통합·실제 엔진 검사
+├── docs/PORTFOLIO_ROADMAP.md
+├── Twilight_of_Antiquity/         # 기존 고대 토탈 컨버전: mod/data/assets/toolchain/tests/docs
+└── Vanilla_Plus/                  # 신규 Vanilla+ 편의성: docs/features(F01~F18), docs/research, mod/tests(예정)
 ```
 
-**바로 볼 문서:** [시리즈 문서 목차](Twilight_of_Antiquity/docs/README.md) · [M0~M10 공식 개발 순서](Twilight_of_Antiquity/docs/planning/MASTER_ROADMAP.md) · [최적화 디렉터리 설계](Twilight_of_Antiquity/docs/architecture/REPOSITORY_LAYOUT.md)
-
-**현재 상태:** Rust workspace, 경로 소유권 검사 CLI, 최소 날짜 모드와 G0 실험 도구를 구현했습니다. 사용자 실행으로 600년 시작·진행·저장/로드와 720년 종료·계속 플레이를 확인했습니다. 120년 연속 진행과 전체 게임 시스템·DLC 호환성은 미검증입니다. M1 파서는 초기 초안만 보존하고 사용자 요청으로 추가 개발을 중단했습니다. [현재 상태](Twilight_of_Antiquity/docs/planning/STATUS.md) · [실험 결과](Twilight_of_Antiquity/docs/quality/M0_G0_REPORT.md).
+**원칙:** 1차 디렉터리는 시리즈 단위. 원본 게임/DLC·타사 Steam 창작마당 코드는 무단 복제·배포하지 않습니다. 공통 도구는 검증된 재사용 수요가 발생할 때만 추출하고 Twilight의 중단된 M1을 QoL 작업 선행 조건으로 삼지 않습니다. 정적 검사는 실제 게임 검증을 대체하지 않습니다.

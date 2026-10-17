@@ -1,7 +1,8 @@
-# 08. SAECVAR 전체 개발 로드맵 — 우선순위 기준
+# 08. Twilight of Antiquity — 개발 우선순위 개요
 
-- 상태: **v0.3 통합 로드맵** (실제 코드 개발은 아직 시작되지 않음)
-- **이 문서는 전체 개발의 최상위 목차**이며 [17 통합 마일스톤 상세](MASTER_ROADMAP.md)가 유일한 M0~M10 공식 일정·선행관계 명세다.
+- 상태: **Twilight 전용 v0.3 기획**. M0 구현/G0 실증은 [STATUS](STATUS.md)로 확인하며, M1은 초안에서 사용자 요청으로 추가 개발 중단.
+- SAECVAR 전체 프로젝트는 [포트폴리오 로드맵](../../../docs/PORTFOLIO_ROADMAP.md), 별도 편의성 프로젝트는 [Vanilla Plus](../../../Vanilla_Plus/docs/planning/MASTER_ROADMAP.md) 참조.
+- **이 문서는 Twilight 시리즈 개발의 최상위 목차**이며 [17 통합 마일스톤 상세](MASTER_ROADMAP.md)가 유일한 M0~M10 공식 일정·선행관계 명세다.
 - 분석기 내부 하위 단계는 [12 Analyzer 로드맵](ANALYZER_ROADMAP.md)에, 전체 기능은 [14 기능 카탈로그](../reference/TOOLCHAIN_FUNCTION_CATALOG.md)에 기술한다.
 - 기술적 핵심: **Tiger 참고 전용 + 자체 정적 분석기 + 공통 편집 코어 + Codex/Human 동등한 클라이언트**.
 
@@ -55,4 +56,4 @@ Codex와 Human은 **같은 정의·같은 검증·같은 파일 변경 엔진**�
 - 분석 결과를 실제 게임 적용 성공이라고 잘못 주장하지 않는다.
 - 버전별 게임 규칙 불확실성을 명시한다.
 - **2회 연속 검토에서 추가 수정 사항이 없고, 해당 단계의 실행/정적 증거가 충분할 때만 작업 완료**로 보고한다.
-- 이번 v0.3 업데이트는 **문서 변경**이며 Rust/GUI 구현 완료가 아니다.
+- v0.3의 후속 마일스톤은 기획이지만 기존 [STATUS](STATUS.md)의 M0 환경 기반 구현/G0 최소 날짜 실증은 이미 기록돼 있다. M1은 초안에서 추가 개발이 중단되었으며 GUI 완성을 주장하지 않는다.

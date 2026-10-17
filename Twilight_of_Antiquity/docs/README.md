@@ -1,5 +1,7 @@
 # Twilight of Antiquity — 문서 안내
 
+이 문서 목차와 M0~M10은 Twilight 전용입니다. [SAECVAR 포트폴리오](../../docs/PORTFOLIO_ROADMAP.md)와 별도 [Vanilla Plus](../../Vanilla_Plus/docs/README.md) 시리즈는 독립 개발합니다.
+
 기획 문서 18개를 **주제별 디렉터리**로 배치했다. 전체 프로젝트 시작점은 [시리즈 README](../README.md), 저장소 경계·미래 확장 원칙은 [디렉터리 아키텍처](architecture/REPOSITORY_LAYOUT.md), 가장 먼저 수행할 작업은 [최종 로드맵](planning/MASTER_ROADMAP.md)을 참고한다.
 
 개발 착수 후 현재 상태는 [STATUS](planning/STATUS.md), 실제 구현·검증 결과는 [M0/G0 보고서](quality/M0_G0_REPORT.md), 실행 명령은 [runtime 안내](../tests/runtime/README.md)에서 관리한다. 아래 18개 원 기획 문서는 설계 기준으로 유지한다.

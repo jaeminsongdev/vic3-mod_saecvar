@@ -1,6 +1,7 @@
-# 17. 통합 개발 순서 — 실제 SAECVAR 제작 우선순위
+# 17. Twilight of Antiquity 전용 통합 개발 순서 — M0~M10
 
-- 상태: **최종 기획 통합 v0.3**, 구현/완료 선언이 아님
+- 상태: **Twilight 전용 v0.3 개발 기획**. 일부 M0/G0의 실제 결과는 별도 STATUS 기준.
+- 프로젝트간 조율: [SAECVAR 포트폴리오 로드맵](../../../docs/PORTFOLIO_ROADMAP.md). QoL은 [Vanilla Plus Q0~Q8](../../../Vanilla_Plus/docs/planning/MASTER_ROADMAP.md).
 - 2026-10-16 기준의 권장 선후관계
 - [08 최상위 로드맵](ROADMAP_QA.md)과 함께 유지; 상세 기능 ID는 [14](../reference/TOOLCHAIN_FUNCTION_CATALOG.md), 참고 레포는 [15](../reference/REFERENCE_REPOSITORIES.md).
 
@@ -99,3 +100,10 @@ M5 도달 전에는 전체 600년 국가의 역사 데이터 대량 제작, 거�
 ## 9. 변경 이력·기존 로드맵 관계
 
 [08 통합 최상위 로드맵](ROADMAP_QA.md)은 본 문서 M0~M10을 **프로젝트 공식 우선순위**로 참조한다. 기존 [12 Analyzer 로드맵](ANALYZER_ROADMAP.md)의 A0~A7은 분석기 하위 과제이며 전체 프로젝트를 끝까지 선점하는 일렬 작업표가 아니다.
+
+
+## 10. 두 번째 SAECVAR 시리즈 반영 (2026-10-17)
+
+- M0~M10은 고대 토탈 컨버전과 자체 분석기 관련 **Twilight 전용**이다. 새 Vanilla Plus F01~F18/Q0~Q8 요구를 이 표의 기존 완료 기준으로 혼합하지 않는다.
+- M0 구현과 G0 최소 날짜 실증 수용은 변하지 않는다. **M1 사용자 중단 상태를 유지**한다. QoL 프로젝트 추가는 M1 재개 허가가 아니다.
+- PDX 문법·overlay·검증 fixture가 실제로 호환된다는 증거가 쌓일 경우 공통도구 추출을 검토할 수 있으나, **QoL의 Q1은 Twilight M1~M4 구현을 필수 의존성으로 갖지 않는다**.

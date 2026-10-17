@@ -1,0 +1,17 @@
+demand_id,request,priority,problem,mapped_features,gap,source_url
+D01,정복·병합 주의 PM 표준화,상,반복 클릭이 심하고 공급·고용 충격 위험도 존재,"F02,F05",기존 모드 존재; 정책·조건·예외 개선,https://www.reddit.com/r/victoria3/comments/1ra08jv/the_most_critical_mods_that_should_be_rolled_into/
+D02,전기화와 발전소 자동 연결,상,전기 생산시설과 PM를 주별로 다시 맞춤,"F02,F03",기존 독립 모드들을 연결하는 기능,https://www.reddit.com/r/victoria3/comments/1svrsfg/at_what_point_do_you_guys_just_turn_on_automatic/
+D03,PM 수익성 판단·보호 잠금,상,산업별 자동화가 경제에 손실을 줄 수 있음,F02,이미 자동 PM 모드 존재; 잠금·목표·안전장치 차별화,https://www.reddit.com/r/victoria3/comments/1cns3ig
+D04,대량 건설과 대기열 관리,상,후반 국가 운영에서 수십·수백 번 반복 클릭,F01,기존 일괄 건설 모드 존재; 여러 조건을 연결,https://www.reddit.com/r/victoria3/comments/yzdt23
+D05,상품별 교역 상대·시장 가시화,상,주요 수입국·수출국이 국가 전략에 결정적,"F04,F10",Trade Partners 높은 직접 추천; 조약 수익 통합 개선,https://www.reddit.com/r/victoria3/comments/1waf40o/what_are_must_have_mods_for_victoria_3/
+D06,민간투자 자동확장 신뢰성,중상,민간투자가 원치 않는 시설을 만들거나 경제를 악화,"F01,F11",투자 금지·추천·예상 손익을 별도로 제공,https://www.reddit.com/r/victoria3/comments/1svrsfg/at_what_point_do_you_guys_just_turn_on_automatic/
+D07,직접 조작보다 예측·제안 우선,중상,무조건 PM를 최신으로 바꾸면 투입재 부족,"F02,F05",추천 → 예약 → 실행의 단계별 정책,https://www.reddit.com/r/victoria3/comments/1t8g3zx
+D08,군대·해군 지휘/수송 알림,중,편제 오류와 부족한 해군 수송 상태를 놓침,"F05,F13","No Commander Alert, Better War Info 등으로 부분 구현",
+D09,국제 사건 필터·중요도,중,전 세계 알림이 과도하거나 반대로 중요 사건을 놓침,"F05,F16",선택적 국제뉴스·하이라이트 통합,
+D10,급진파·생활수준 원인 추적,중,급진파 수치만 보이고 원인이 여러 UI에 분산,"F04,F15",인과 단정하지 않는 다차원 진단,
+D11,조약 운송비·예상 순이익,중,계약 체결 시 숨겨진 비용으로 실현 손익이 변함,F10,Smart Treaties의 예측/실현 구분 참고,
+D12,연구 완료·법률·세력권 행동 알림,중,"완료 팝업 누락, 행동 가능 여부 탐색 부담","F05,F14",이미 개별 알림 모드 존재; 통합 필터 개선,
+D13,긴 목록·작은 글자·한국어 단위,중,과도한 스크롤/정보 밀도/만·억 현지화 불일치,"F06,F18",한국어 QA와 접근성 토글,
+D14,완전 실행 취소 대신 제한된 Undo,중,실수로 세율·관세·소비세 등 값을 변경,F06,지원되는 상태만 저장·이전 값 복원,
+D15,악명·동화·편입의 완만한 개선,조건부,제약이 너무 느리지만 과도한 버프는 전략을 소거,"F07,F08,F09",옵션 프로필로 제공; 사용자 수요 정량 근거는 부족,
+D16,성능 저하 없는 후반 대국 운영,중,후반 월말/주말 연산 지연,"F01,F02,F18",자동화 알고리즘이 새 연산 부담을 만들지 않게 설계,
