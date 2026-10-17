@@ -17,6 +17,8 @@
 
 ## 저장소 구조 예시 (복사 전 확인)
 
+> **역사적 초기 제안:** 아래 독립 저장소 `vic3-qol/` 그림은 대화 중 개발 시나리오였으며, 현재 GitHub의 실제 폴더가 아니다. 채택한 기준은 [SAECVAR 루트 로드맵](../../../docs/PORTFOLIO_ROADMAP.md), [현재 Vanilla Plus 문서](../README.md), [Q0~Q8 공식 로드맵](../planning/MASTER_ROADMAP.md)이다. 논리 모듈 5개를 다섯 개의 별도 Steam 패키지로 출시한다는 결정도 아직 없다.
+
 ```text
 vic3-qol/
 ├─ README.md
@@ -65,7 +67,7 @@ vic3-qol/
    └─ package.py
 ```
 
-정확한 하위 디렉터리·구현 파일명은 **현재 설치된 Victoria 3 본편의 경로를 먼저 분석한 뒤** 결정한다. 위의 `common/`, `gui/`, `localization/` 등은 컨벤션을 설명하기 위한 상위 구조 예시다. 기존 대체역사 610년 모드 저장소와 혼합하지 않는 편이 유지보수에 유리하다.
+정확한 하위 디렉터리·구현 파일명은 **현재 설치된 Victoria 3 본편의 경로를 먼저 분석한 뒤** 결정한다. 위의 `common/`, `gui/`, `localization/` 등은 컨벤션을 설명하기 위한 상위 구조 예시다. 기존 600~720년 Twilight 시리즈와 섞지 않고 `Vanilla_Plus/` 독립 폴더에서 구현한다.
 
 ## 기능 구현 가능성 분류
 

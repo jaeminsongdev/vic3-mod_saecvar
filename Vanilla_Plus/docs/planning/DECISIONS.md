@@ -11,3 +11,9 @@
 - **미확정 Q05:** 로컬 도구를 Twilight 툴체인과 공유할지 여부. Twilight 사용자 중단된 M1의 재개는 별도 지시가 있어야 함.
 
 [기능 전체](../features/README.md) · [QA](../quality/QA_PLAN.md) · [포트폴리오 일정](../../../docs/PORTFOLIO_ROADMAP.md).
+
+## 2026-10-17 교차 검수 보완 기록
+
+- 56개 `Fxx-Ryy`는 [등록부](REQUIREMENT_REGISTER.csv)에서 상태 `PLANNED/PENDING/NOT_RUN`으로 통일. 18개 기능군의 Workshop/커뮤니티 자료는 [FEATURE_SOURCE_MATRIX.csv](FEATURE_SOURCE_MATRIX.csv)에 **범주 단위 참고 근거**로 연결.
+- 공통 안전·권한·대칭·성능 요구 X01~X07은 F18에서 별도 [횡단 요구사항](../features/CROSS_CUTTING_REQUIREMENTS.md)으로 정리. 실제 모딩 코드 변경이나 기존 수치 채택을 의미하지 않음.
+- 외부 공식 일정 변경은 [VERSION_MATRIX](../quality/VERSION_MATRIX.md)에서 별도 확인. 1.14 베타 결과와 미래 1.15 정식 검증을 합산하지 않음.

@@ -1,0 +1,8 @@
+test_id,policy_id,scenario,status,game_build,evidence_url
+QA-X01,X01,각 자동화의 국가·주·산업별 설정·제외/상한 확인,NOT_RUN,PENDING,
+QA-X02,X02,법률/기술/건설력/외교 제약 우회 없는지 실제 실행,NOT_RUN,PENDING,
+QA-X03,X03,AI와 플레이어 동일 조건의 수치 보정 비교,NOT_RUN,PENDING,
+QA-X04,X04,원본 수치 vs 예상/추정 및 시간축 구분,NOT_RUN,PENDING,
+QA-X05,X05,기능 실패 시 독립적인 중지·오류 사유,NOT_RUN,PENDING,
+QA-X06,X06,GUI 충돌·세이브/업적/멀티플레이 호환성 결과 공개,NOT_RUN,PENDING,
+QA-X07,X07,후반 AI 시뮬레이션 틱 성능 회귀,NOT_RUN,PENDING,

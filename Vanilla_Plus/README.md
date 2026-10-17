@@ -10,6 +10,8 @@
 | [F01~F18 설계서](docs/features/README.md) | 56개 기능 단위와 완료 조건 |
 | [Steam Workshop 조사 원본](docs/research/README.md) | 111개 링크·보조 사례·사용자 요구·출처 |
 | [모듈/실행 안전 설계](docs/architecture/MODULE_BOUNDARIES.md) | UI, Automation, Balance, Compatibility |
+| [기능별 상태 등록부](docs/planning/REQUIREMENT_REGISTER.csv) | 56개 요구 구현/실현성/검증 상태 |
+| [패치 버전 매트릭스](docs/quality/VERSION_MATRIX.md) | 1.13/1.14/1.15의 독립 검증 절차 |
 | [QA 게이트](docs/quality/QA_PLAN.md) | 정적/런타임/AI·세이브·성능 검증 |
 | [결정 및 미확정](docs/planning/DECISIONS.md) | 확정된 범위와 기술적 가설 구분 |
 | [SAECVAR 브랜드 로드맵](../docs/PORTFOLIO_ROADMAP.md) | 두 시리즈 일정 관계 |

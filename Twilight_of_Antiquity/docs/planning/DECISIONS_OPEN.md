@@ -113,4 +113,4 @@ D-002의 'Twilight of Antiquity'는 대화상 첫 프로젝트의 이름으로 �
 
 참고: [14 기능 카탈로그](../reference/TOOLCHAIN_FUNCTION_CATALOG.md) · [15 구현별 레포](../reference/REFERENCE_REPOSITORIES.md) · [16 공통 구조](../architecture/TOOLCHAIN_ARCHITECTURE.md) · [17 전체 순서](MASTER_ROADMAP.md) · [18 공통 작업](../architecture/SHARED_WORKFLOWS.md).
 
-**실행/코드 상태:** 이 문서에서는 툴체인이 설계되었을 뿐 생성·실행되지 않았고, M0~M10 모든 구현 마일스톤은 미완료다.
+**현재 검증된 진행 상태(2026-10-17 재확인):** 과거 v0.3 설계 당시에는 전체가 미구현이었지만, 이후 **M0 Rust 작업공간·경로 검사 코드가 생성되었고 G0 최소 날짜 시연은 사용자 관찰로 수용되었다.** M1 파서 초안은 존재하나 **사용자 요청으로 추가 개발 중단, 완료 아님**이다. M2~M10은 진행 전이다. [현행 STATUS](STATUS.md) · [M0/G0 증거](../quality/M0_G0_REPORT.md). 이 기록의 과거 설계 표현을 현재 코드가 없다는 뜻으로 해석하지 않는다.
